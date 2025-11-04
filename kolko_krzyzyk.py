@@ -119,10 +119,10 @@ while True:
     print(box7 + " " + box8 + " " + box9 + " ")
 
     if box5 == box1 == box9 == "X" or box5 == box4 == box6 == "X" or box5 == box7 == box3 == "X" or box5 == box8 == box2 == "X":
-        print("Przegrana!")
+        print("//// Przegrana! ////")
         break
     elif box1 != "-" and box2 != "-" and box3 != "-" and box4 != "-" and box5 != "-" and box6 != "-" and box7 != "-" and box8 != "-" and box9 != "-":
-        print("Remis!")
+        print("//// Remis! ////")
         break
 
     # ruch gracza
@@ -159,20 +159,22 @@ while True:
             box9 = "O"
             move_valid = 1
         else:
-            print("Błąd! wpisz poprawne pole!")
+            print("/!/ Błąd! wpisz poprawne pole! /!/")
+            print(box1 + " " + box2 + " " + box3 + " ")
+            print(box4 + " " + box5 + " " + box6 + " ")
+            print(box7 + " " + box8 + " " + box9 + " ")
 
     print(box1 + " " + box2 + " " + box3 + " ")
     print(box4 + " " + box5 + " " + box6 + " ")
     print(box7 + " " + box8 + " " + box9 + " ")
-    print()
 
 
     # sprawdzenie stanu gry
 
     if box5 == box1 == box9 == "X" or box5 == box4 == box6 == "X" or box5 == box7 == box3 == "X" or box5 == box8 == box2 == "X":
-        print("Wygrało CPU!")
+        print("//// Przegrana!////")
         break
     elif box1 != "-" and box2 != "-" and box3 != "-" and box4 != "-" and box5 != "-" and box6 != "-" and box7 != "-" and box8 != "-" and box9 != "-":
-        print("Remis!")
+        print("//// Remis!////")
         break
 
