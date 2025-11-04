@@ -17,12 +17,9 @@ print(" 7  8  9 ")
 
 while True:
 
-    #ruch początkowy CPU
+    print("Ruch CPU!")
 
-    # if box5 == "-" :
-    #     box5 = "X"
-
-    #sprawdzanie czy jest opcja wygrać
+    #sprawdzanie czy jest opcja wygranej
 
     #159
 
@@ -55,6 +52,9 @@ while True:
 
     #blokowanie gracza przed wygrana
     else :
+
+        # 123
+
         if box1 == box2 == "O" and box3 == "-":
             box3 = "X"
         elif box2 == box3 == "O" and box1 == "-":
@@ -62,12 +62,7 @@ while True:
         elif box1 == box3 == "O" and box2 == "-":
             box2 = "X"
 
-        elif box4 == box5 == "O" and box6 == "-":
-            box6 = "X"
-        elif box5 == box6 == "O" and box4 == "-":
-            box4 = "X"
-        elif box4 == box6 == "O" and box5 == "-":
-            box5 = "X"
+        # 789
 
         elif box7 == box8 == "O" and box9 == "-":
             box9 = "X"
@@ -76,6 +71,8 @@ while True:
         elif box7 == box9 == "O" and box8 == "-":
             box8 = "X"
 
+        # 147
+
         elif box1 == box4 == "O" and box7 == "-":
             box7 = "X"
         elif box4 == box7 == "O" and box1 == "-":
@@ -83,12 +80,7 @@ while True:
         elif box1 == box7 == "O" and box4 == "-":
             box4 = "X"
 
-        elif box2 == box5 == "O" and box8 == "-":
-            box8 = "X"
-        elif box5 == box8 == "O" and box2 == "-":
-            box2 = "X"
-        elif box2 == box8 == "O" and box5 == "-":
-            box5 = "X"
+        # 369
 
         elif box3 == box6 == "O" and box9 == "-":
             box9 = "X"
@@ -96,20 +88,6 @@ while True:
             box3 = "X"
         elif box3 == box9 == "O" and box6 == "-":
             box6 = "X"
-
-        elif box1 == box5 == "O" and box9 == "-":
-            box9 = "X"
-        elif box5 == box9 == "O" and box1 == "-":
-            box1 = "X"
-        elif box1 == box9 == "O" and box5 == "-":
-            box5 = "X"
-
-        elif box3 == box5 == "O" and box7 == "-":
-            box7 = "X"
-        elif box5 == box7 == "O" and box3 == "-":
-            box3 = "X"
-        elif box3 == box7 == "O" and box5 == "-":
-            box5 = "X"
 
 
         # jeśli nie trzeba blokować  wykonaj ruch
@@ -136,9 +114,9 @@ while True:
 
     # drukowanie planszy i sprawdzenie stanu gry
 
-    print(box1 + box2 + box3)
-    print(box4 + box5 + box6)
-    print(box7 + box8 + box9)
+    print(box1 + " " + box2 + " " + box3 + " ")
+    print(box4 + " " + box5 + " " + box6 + " ")
+    print(box7 + " " + box8 + " " + box9 + " ")
 
     if box5 == box1 == box9 == "X" or box5 == box4 == box6 == "X" or box5 == box7 == box3 == "X" or box5 == box8 == box2 == "X":
         print("Przegrana!")
@@ -182,6 +160,11 @@ while True:
             move_valid = 1
         else:
             print("Błąd! wpisz poprawne pole!")
+
+    print(box1 + " " + box2 + " " + box3 + " ")
+    print(box4 + " " + box5 + " " + box6 + " ")
+    print(box7 + " " + box8 + " " + box9 + " ")
+    print()
 
 
     # sprawdzenie stanu gry
