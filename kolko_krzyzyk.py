@@ -172,9 +172,9 @@ while True:
     # sprawdzenie stanu gry
 
     if box5 == box1 == box9 == "X" or box5 == box4 == box6 == "X" or box5 == box7 == box3 == "X" or box5 == box8 == box2 == "X":
-        print("//// Przegrana!////")
+        print("//// Przegrana! ////")
         break
     elif box1 != "-" and box2 != "-" and box3 != "-" and box4 != "-" and box5 != "-" and box6 != "-" and box7 != "-" and box8 != "-" and box9 != "-":
-        print("//// Remis!////")
+        print("//// Remis! ////")
         break
 
